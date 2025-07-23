@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
           </p>
         </div>
         <div className="mt-4 md:mt-0">
-          <a href="/TaylorCarara_Resume.pdf" download className="inline-flex items-center px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors">
+          <a href="Taylor_Carara_Resume_Finance.docx" download className="inline-flex items-center px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors">
             <DownloadIcon size={18} className="mr-2" />
             Download PDF
           </a>
