@@ -15,17 +15,9 @@ const Sidebar: React.FC = () => {
     label: 'Portfolio',
     icon: <BookOpenIcon size={20} />
   }, {
-    path: '/services',
-    label: 'Services',
-    icon: <BriefcaseIcon size={20} />
-  }, {
     path: '/testimonials',
     label: 'Testimonials',
     icon: <HeartIcon size={20} />
-  }, {
-    path: '/blog',
-    label: 'Blog',
-    icon: <FileTextIcon size={20} />
   }, {
     path: '/contact',
     label: 'Contact',
