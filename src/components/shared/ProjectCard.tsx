@@ -12,6 +12,7 @@ interface ProjectCardProps {
   metrics?: string;
   tags?: string[];
   link: string;
+  href: string;
 }
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
@@ -24,10 +25,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   readingTime,
   metrics,
   tags,
+  href,
   link
 }) => {
   return <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full">
-      <div className="h-48 overflow-hidden">
+    <a href={href}>
+    <div className="h-48 overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
       </div>
       <div className="p-5 flex flex-col flex-grow">
@@ -53,6 +56,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           Read Full Article
         </Button>
       </div>
+    </a>
+      
     </div>;
 };
 export default ProjectCard;
